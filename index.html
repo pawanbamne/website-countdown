@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Coming Soon 8</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body style="background-image: url('https://i.pinimg.com/originals/3d/08/e0/3d08e03cb40252526fee2036a67f07f1.gif');">
+	
+	
+	<div class="flex-w flex-c-m p-t-55 p-10  p-l-15 p-r-15" >
+		<div class=" ">
+			
+			<h3 class="l1-txt1 txt-center p-b-22 bg-light text-dark">
+				Portfolio Website Launch<br><span class="text-danger"> on </span><br><span class="text-primary">16 May 2022</span> <br><span class="text-success">06:00 AM</span>
+			</h3>
+
+			<!-- <p class="txt-center m2-txt1 p-b-67 bg-info">
+				Time Remaining
+			</p> -->
+<p class="bg-light text-dark fs-25 font-weight-bold text-center">Time Remaining</p>
+			<div class="flex-w flex-sa-m cd100 bor1 p-t-42 p-b-22 p-l-50 p-r-50 respon1 bg-light">
+				<!-- <p class="bg-light text-dark">Time Remaining</p> -->
+				<div class="flex-col-c-m wsize2 m-b-20 text-dark">
+					<span class="l1-txt2 p-b-4 days  text-dark" id="days"></span>
+					<span class="m2-txt2  text-dark">Days</span>
+				</div>
+
+				<span class="l1-txt2 p-b-22" text-dark>:</span>
+				
+				<div class="flex-col-c-m wsize2 m-b-20" text-dark>
+					<span class="l1-txt2 p-b-4 hours  text-dark" id="hours"></span>
+					<span class="m2-txt2  text-dark">Hours</span>
+				</div>
+
+				<span class="l1-txt2 p-b-22 respon2 text-dark">:</span>
+
+				<div class="flex-col-c-m wsize2 m-b-20" text-dark>
+					<span class="l1-txt2 p-b-4 minutes text-dark" id="minutes"></span>
+					<span class="m2-txt2  text-dark">Minutes</span>
+				</div>
+
+				<span class="l1-txt2 p-b-22 text-dark">:</span>
+
+				<div class="flex-col-c-m wsize2 m-b-20">
+					<span class="l1-txt2 p-b-4 seconds text-dark" id="seconds"></span>
+					<span class="m2-txt2  text-dark">Seconds</span>
+				</div>
+			
+			</div>
+			<span class="bg-light text-dark fs-25 font-weight-bold text-center">© 2022 Copyright:
+					<a href="/" class="text-primary fs-25 font-weight-bold bg-light"> pawanbamne.com</a></span>	
+		</div>
+		
+	</div>
+	<!-- <footer class="page-footer font-small blue bg-warning footer-copyright text-center py-3">
+
+		<!-- Copyright -->
+		
+		 
+		<!-- Copyright -->
+	  
+	  </footer> -->
+
+
+
+	
+
+
+	<!-- <script src="js/main.js"></script> -->
+	<script>
+		dest = new Date("may 16, 2022 06:00:00").getTime();
+		var x = setInterval(function() {
+		var now = new Date().getTime();
+		var diff = dest - now;
+		
+		
+		var days = Math.floor(diff/(1000*60*60*24));
+
+		var hours = Math.floor((diff%(1000*60*60*24))/(1000*60*60));
+		var minutes = Math.floor((diff%(1000*60*60))/(1000*60));
+		var seconds = Math.floor((diff%(1000*60))/1000);	
+
+	document.getElementById("days").innerHTML = days;
+	document.getElementById("hours").innerHTML = hours;
+	document.getElementById("minutes").innerHTML = minutes;
+	document.getElementById("seconds").innerHTML = seconds;
+
+	}, 1000);
+	
+	
+	</script>
+	
+</body>
+</html>
